@@ -1,0 +1,42 @@
+------------------------------
+Problemática:
+
+"SuperTech está perdiendo dinero porque en transacciones 
+que requieren pasar de euro a $mex y de dolar a $mex hay 
+errores del personal"
+------------------------------
+Algoritmo:
+
+1. Definir el tipo de cambio
+2. Solicitar al usuario el Tipo de conversión (euro a peso mex o dolar a peso mex)
+3. Solicitar el monto a convertir
+4. Realizar la conversión utilizando el TC correspondiente
+5. Mostrar al usuario la conversión ya realizada 
+------------------------------
+Pseudocódigo:
+Inicio
+    
+    # Paso 1: Definir el tipo de cambio
+    Definir TC_eur_a_mxn = 23.70
+    Definir TC_usd_a_mxn = 20.75
+
+    # Paso 2: Solicitar al usuario el Tipo de conversión (euro a peso mex o dolar a peso mex)
+    Mostrar mensaje: "Ingrese la moneda de origen para la conversión (usd/eur): "
+
+    # Paso 3: Solicitar el monto a convertir
+    Mostrar mensaje: "Ingrese el monto a convertir: " y castearlo
+    
+    # Paso 4: Realizar la conversión utilizando el TC correspondiente
+    # Paso 5: Mostrar al usuario la conversión ya realizada
+    
+    si tipo_conversión == "eur": 
+        calcular resultado monto_convertido= TC_eur_a_mxn * monto_a_convertir
+        Mostrar msj:" El resultado de la conversión de EUR a MXN es:", monto_convertido
+    sino tipo_conversión == "usd"
+        calcular resultado monto_convertido= TC_usd_a_mxn * monto_a_convertir
+        Mostrar msj:" El resultado de la conversión de USD a MXN es:", monto_convertido
+    sino:
+        Mostrar msj: "Tipo de conversión no válido"
+Fin    
+------------------------------
+------------------------------
